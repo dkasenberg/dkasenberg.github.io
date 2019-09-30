@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <aside class="sidebar">
   <header>
     <div class="about">
@@ -10,6 +9,11 @@ layout: default
       </div>
       <div class="author-name">{{site.author}}</div>
       <p>{{site.about-author}}</p>
+      <div class="navigate">
+      <a href="{% link about.html %}">About</a> |
+      <a href="{% link publications.html %}">Publications</a> |
+      <a href="{{site.baseurl}}/assets/cv.pdf" target="_blank">CV</a>
+    </div>
     </div>
   </header> <!-- End Header -->
   <footer>
@@ -19,12 +23,10 @@ layout: default
         {% if site.social-twitter %}
           <li><a href="https://twitter.com/{{ site.social-twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         {% else %}
-          <li><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         {% endif %}
         {% if site.social-facebook %}
           <li><a href="https://facebook.com/{{ site.social-facebook }}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        {% else %}
-          <li><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
         {% endif %}
         {% if site.social-github %}
           <li class="github"><a href="http://github.com/{{site.social-github}}" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -38,8 +40,6 @@ layout: default
         {% endif %}
         {% if site.social-email %}
           <li class="email"><a href="mailto:{{site.social-email}}"><i class="fa fa-envelope-o"></i></a></li>
-        {% else %}
-          <li class="email"><a href="mailto:example.david@blog.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
         {% endif %}
       </ul>
     </section> <!-- End Section Contact -->

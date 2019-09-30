@@ -1,6 +1,7 @@
 ---
 layout: main
 ---
+{% include mathjax.html %}
 <article class="article-page">
   <div class="page-content">
     {% if page.img %}
@@ -32,7 +33,13 @@ layout: main
           {% endfor %}
         </div>
       </div>
-      {% include disqus.html %}
+      {% if page.comments %}
+      <div class="disqus">
+        {% include disqus.html %}
+      </div>
+      {% else %}
+      <p>(Comments are disabled on this post)</p>
+      {% endif %}
     </div> <!-- End Wrap Content -->
   </div> <!-- End Page Content -->
 </article> <!-- End Article Page -->

@@ -1,0 +1,18 @@
+	{% if page.bibtex %}
+<div class="bibtex_template">
+  <div style="margin-bottom:5px; font-weight: bold">
+    <span class="if url"><a class="url" target="_blank"><span class="title"></span></a></span>
+    <span class="if !url"><span class="title"></span></span>
+  </div>
+  <div class="if author" style="margin-left:10px">
+    <span class="author"></span>,
+    <span class="if booktitle"><span class="booktitle" style="font-style:italic"></span>,</span>
+    <span class="if journal"><span class="journal" style="font-style:italic"></span>,</span>
+    <span class="if year">
+      <span class="year"></span>
+    </span>.
+
+  </div>
+ 
+</div>
+	{% endif %}

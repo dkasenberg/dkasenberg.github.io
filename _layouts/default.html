@@ -2,10 +2,17 @@
 <html lang="en">
 {% include head.html %}
 <body>
+{% if page.bibtex %}
+    {% for name in page.bibtex_names %}
+    <bibtex src="/assets/bib/{{ name }}.bib" name="{{ name }}"></bibtex>
+    {% endfor %}
+    {% endif %}
 
   <div class="wrapper">
     {{ content }}
   </div>
+
+  {% include bibtex_template.html %}
   
   {% include analytics.html %}
 </body>
