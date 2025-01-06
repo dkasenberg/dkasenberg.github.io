@@ -1,6 +1,6 @@
 title: Daniel Kasenberg
 description: > # this means to ignore newlines until "baseurl:"
-  The personal website/blog of Daniel Kasenberg, a PhD candidate in Computer Science and Cognitive Science at Tufts University.
+  The personal website/blog of Daniel Kasenberg, a Senior Research Scientist at Google DeepMind.
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
@@ -9,7 +9,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: Daniel Kasenberg # add your name
 author-img: daniel-kasenberg.jpg # add your photo
-about-author: PhD candidate in the Human-Robot Interaction Lab at Tufts University. # add description
+about-author: Senior Research Scientist, Google DeepMind
 social-instagram: danielcheesemountain
 social-twitter: dkasenberg # add your Twitter handle
 social-github: dkasenberg # add your Github handle
